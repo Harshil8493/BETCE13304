@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KIDS Wear</title>
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="KIDS.png" alt="logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1>Find Your Perfect Products</h1>
+            <input type="text" id="search-bar" placeholder="Search for a product..." onkeyup="searchProducts()">
+        </div>
+    </header>
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Girl's Wardrobe</h2>
+            <div id="product-list" class="row">
+                <div class="col product-item" data-name="">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/12675812a.webp" alt="Cotton Frock">
+                    <h4>Cotton Frock</h4>
+                    <p>₹399</p>
+                </div>
+                <div class="col product-item" data-name="Denim Shorts">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/16471305a.webp" alt="Denim Shorts">
+                    <h4>Denim Shorts</h4>
+                    <p>₹482</p>
+                </div>
+                <div class="col product-item" data-name="Hooded">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/17580687a.webp" alt="Hooded">
+                    <h4>Hooded</h4>
+                    <p>₹699</p>
+                </div>
+                <div class="col product-item" data-name="Top">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/17551374a.webp" alt="TOP">
+                    <h4>TOP</h4>
+                    <p>₹1026</p>
+                </div>
+                <div class="col product-item" data-name="Jeans">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/14089069a.webp" alt="Jeans">
+                    <h4>Jeans</h4>
+                    <p>₹542</p>
+                </div>
+                <div class="col product-item" data-name="Hand Socks">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/17563150a.webp" alt="Hand Socks">
+                    <h4>Hand Socks</h4>
+                    <p>₹240</p>
+                </div>
+                <div class="col product-item" data-name="Eyeshadow">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/13697303a.webp" alt="Wollen Cap">
+                    <h4>Wollen Cap</h4>
+                    <p>₹499</p>
+                </div>
+                <div class="col product-item" data-name="Eyeshadow">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/18085715a.webp" alt=" Sandals">
+                    <h4> Sandals</h4>
+                    <p>₹546</p>
+                </div>
+                <div class="col product-item" data-name="Eyeshadow">
+                    <img src="https://cdn.fcglcdn.com/brainbees/images/products/583x720/15709663a.webp" alt="T-shirts">
+                    <h4>T-shirts</h4>
+                    <p>₹692</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+   
+    <script src="animation.js"></script>
+
+</body>
+</html>
