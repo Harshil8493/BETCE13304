@@ -23,9 +23,15 @@
         </section>
 
         <section class="buttons">
-            <button onclick="showMessage('Syllabus')"><a href="">ALA1</a></button>
+            <button onclick="toggleAdditionalButtons()">ALA1</button> 
             <button onclick="showMessage('Assignments')"><a href="WDALA2.html">ALA2</a></button>
             <button onclick="showMessage('Contact Info')"><a href="animation.html">ALA3</a></button>
+        </section>
+        <!-- Section with three more buttons, initially hidden -->
+        <section id="additional-buttons" style="display: none;">
+            <button>Task 1</button>
+            <button>Task 2</button>
+            <button>Task 3</button>
         </section>
 
         <footer>
@@ -34,5 +40,21 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Function to toggle the visibility of the additional buttons
+        function toggleAdditionalButtons() {
+            var additionalSection = document.getElementById("additional-buttons");
+            if (additionalSection.style.display === "none") {
+                additionalSection.style.display = "block"; // Show the additional buttons
+            } else {
+                additionalSection.style.display = "none"; // Hide the additional buttons
+            }
+        }
+    
+        // Function for handling the click event of ALA1, ALA2, and ALA3 buttons
+        function showMessage(section) {
+            alert('You clicked on: ' + section);
+        }
+    </script>
 </body>
 </html>
